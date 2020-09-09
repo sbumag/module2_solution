@@ -1,3 +1,20 @@
-*{
-    color:red
+h1
+{text-align: center;}
+
+.row {border-end-start-radius: 50px;
+}
+ 
+  .row > div {
+    border: 2px solid red;
+    background-color: gray;
+  padding: 15px;
+  }
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+   
 }
