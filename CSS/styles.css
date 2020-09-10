@@ -1,6 +1,10 @@
 
 /********** Base styles **********/
-
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 div {
   background-color: gray;
@@ -13,13 +17,18 @@ div {
   padding: 10px;
  
 }
-div > h2 {
-  text-align: right;
+div > h2  {
+  
+  text-align: center;
   border: 2px black solid;
   background-color: greenyellow;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  padding: 10;
   
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 50%;
+
 
   
 }
@@ -28,14 +37,14 @@ div > h2 {
  /********** Large devices only **********/
  @media (min-width: 992px) {
   #Chicken {
-    width: 25%;
+    width: 27%;
     float: left;
   }
   #Beef {
-    width: 25%;
+    width: 27%;
     float: left;
   }
-  #Sushi{width: 25%;
+  #Sushi{width: 27%;
     float: left;
   }
   h1{text-align: center;}
@@ -46,13 +55,13 @@ div > h2 {
 @media (min-width: 768px) and (max-width: 991px){
   #Chicken {
     width: 30%;
-  height: 200px;
+  height: 250px;
     float: left;
     margin-inline-start: 50px;
   }
   #Beef {
     width: 30%;
-    height: 200px;
+    height: 250px;
     float: left;
     margin-inline-start: 0px;
   }
@@ -69,4 +78,22 @@ div > h2 {
 }
 
 
+@media (min-width: 0px) and (max-width: 767px){
+  #Chicken {
+    width: 60%;
+    height: 250px;
+    ;
+ 
+  }
+  #Beef {
+    width: 60%;
+    height: 250px;
   
+  }
+  
+
+  #Sushi {
+    width: 60%;
+    height: 250px;
+  }
+}
