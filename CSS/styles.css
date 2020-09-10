@@ -1,20 +1,72 @@
-h1
-{text-align: center;}
 
-.row {border-end-start-radius: 50px;
-}
+/********** Base styles **********/
+
+
+div {
+  background-color: gray;
+  border: 2px black solid;
+  margin-inline-end: 50px;
+  margin-block-end: 50px;
+  margin-inline-start: 0;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
  
-  .row > div {
-    border: 2px solid red;
-    background-color: gray;
-  padding: 15px;
-  }
-
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-   
 }
+div > h2 {
+  text-align: right;
+  border: 2px black solid;
+  background-color: greenyellow;
+  
+  padding-right: 20px;
+  padding-left: 20px;
+
+  
+}
+
+
+ /********** Large devices only **********/
+ @media (min-width: 1200px) {
+  #Chicken {
+    width: 25%;
+    float: left;
+  }
+  #Beef {
+    width: 25%;
+    float: left;
+  }
+  #Sushi{width: 25%;
+    float: left;
+  }
+  h1{text-align: center;}
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 1199px){
+  #Chicken {
+    width: 30%;
+  height: 200px;
+    float: left;
+    margin-inline-start: 50px;
+  }
+  #Beef {
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-inline-start: 0px;
+  }
+  
+
+  #Sushi {
+    width: 65%;
+    float: left;
+    margin-inline-start: 50px;
+    
+    
+  }
+  h1{text-align: center;}
+}
+
+
+  
