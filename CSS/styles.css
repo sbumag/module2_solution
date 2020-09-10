@@ -1,5 +1,10 @@
 
 /********** Base styles **********/
+h1{margin-block-end: 50px;
+  margin-inline-start: 75px;
+  
+
+}
 *{
   box-sizing: border-box;
   padding: 0;
@@ -48,6 +53,8 @@ div > h2  {
     float: left;
   }
   h1{text-align: center;}
+  
+
 }
 
 
